@@ -3,13 +3,3 @@
   margin: 0;
   list-style: none;
 }
-
-@mixin button {
-  display: block;
-  font-family: $main-font;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-  text-align: center;
-  text-decoration: none;
-}
