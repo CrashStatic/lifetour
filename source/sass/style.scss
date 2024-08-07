@@ -8,7 +8,12 @@
 @import "./common/fonts";
 @import "./common/viewports";
 @import "./common/variables";
+@import "./common/mixins";
 
 /* BLOCKS */
 @import "./blocks/visually-hidden";
+@import "./blocks/scroll-lock";
 @import "./blocks/page";
+@import "./blocks/container";
+@import "./blocks/header";
+@import "./blocks/navigation";

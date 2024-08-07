@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Страница Lifetour - организация походов в горы Кавказа">
+    <meta name="description" content="Lifetour - организация походов в горы">
     <title>Lifetour</title>
     <link rel="preload" href="fonts/montserrat/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat/Montserrat-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -32,6 +32,56 @@
     <div data-test="gallery">gallery</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div> -->
+
+    <header class="header" data-test="header">
+      <div class="header__container">
+        <div class="header__inner container">
+          <button class="header__nav-toggle" type="button">
+            <span class="visually-hidden">Открыть меню навигации</span>
+          </button>
+          <nav class="header__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#tours">Туры</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#training">Обучение</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#about">О нас</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__logo">
+            <img src="img/logo.svg" alt="Логотип сайта Lifetour" width="142" height="42">
+          </div>
+          <a class="header__number-phone" href="tel:88000000000">8&nbsp;800 000-00-00</a>
+        </div>
+
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Lifetour - организация походов в горы Кавказа</h1>
+
+      <section class="hero" data-test="hero">
+        <h2 class="hero__title">Захватывающие вершины Кавказа</h2>
+      </section>
+
+      <section class="tours" id="tours" data-test="tours">
+        <h2 class="tours__title">Захватывающие вершины Кавказа</h2>
+      </section>
+    </main>
+
     <script type="module" src="js/main.js"></script>
   </body>
 
