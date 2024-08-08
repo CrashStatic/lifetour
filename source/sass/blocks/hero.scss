@@ -11,7 +11,6 @@
   min-height: 568px;
   display: flex;
   height: auto;
-  // position: relative;
   background: #6995c9;
 
   @media (min-width: $tablet-width) {
@@ -32,7 +31,7 @@
   inset: 0;
   top: 0;
 
-  &::before{
+  &::before {
     content: "";
     display: block;
     position: absolute;
@@ -78,7 +77,7 @@
 
 .hero__button {
   margin: 0 auto;
-  padding: 21px 20px 19px;
+  padding: 21px 34px 19px;
 }
 
 .hero__details {
@@ -93,9 +92,5 @@
   --swiper-pagination-bullet-inactive-opacity: 1;
   --swiper-pagination-bullet-active-background: #ffffff;
   --swiper-theme-color: #ffffff;
-  --swiper-pagination-bottom: 40px;
-}
-
-.hero__pagination .swiper-pagination-bullet {
-  border: 1px solid #ffffff;
+  --swiper-pagination-bottom: 35px;
 }
