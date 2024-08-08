@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 
 const initSwiperHero = () => {
   new Swiper('.hero__swiper', {
-    modules: [Pagination],
+    modules: [ Pagination ],
 
     // If we need pagination
     pagination: {
