@@ -1,14 +1,21 @@
-.hero {
-  width: 100%;
-  height: 100%;
-  // background: #6995c9;
-  // position: relative;
-  // z-index: -2;
-}
+// .hero {
+//   width: 100%;
+//   height: 100%;
+//   // background: #6995c9;
+//   // position: relative;
+//   // z-index: -2;
+// }
+
+// .hero__swiper {
+//   width: 320px;
+//   height: 568px;
+//   margin: 0 auto;
+// }
 
 .hero__slide {
   min-height: 568px;
-  position: relative;
+  // position: relative;
+  position: absolute;
   height: auto;
 
   &::before{
@@ -17,8 +24,10 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     background: #6995c9;
-    z-index: -2;
+    z-index: -3;
   }
 
   @media (min-width: $tablet-width) {
@@ -33,16 +42,17 @@
 .hero__image {
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
+  top: 0;
 
   &::before{
     content: "";
     display: block;
     position: absolute;
+    inset: 0;
+    z-index: 1;
     width: 100%;
     height: 100%;
     background: linear-gradient(112.1deg, hsla(228, 46%, 11%, 0.3) 17.2%, hsla(228, 46%, 11%, 0) 94.9%);
@@ -65,8 +75,8 @@
   // transform: translateX(-50%);
   // z-index: 2;
   color: #ffffff;
-  // margin: 40px 0 56px;
-  padding-top: 144.5px;
+  margin: 40px 0 56px;
+  padding-top: 104.5px;
   padding-bottom: 104.5px;
   text-align: center;
 
@@ -97,15 +107,128 @@
 .hero__pagination {
   display: block;
   position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 16px;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+  --swiper-pagination-bullet-inactive-color: transparent;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-active-background: #ffffff;
+  --swiper-theme-color: #ffffff;
+  --swiper-pagination-bottom: 40px;
+
+  height: 16px;
 }
 
-.hero__pagination-list {
-  @include list;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.hero__swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid #ffffff;
 }
+
+// .hero__pagination-list {
+//   @include list;
+
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+// }
+
+
+// .hero {
+//   color: #ffffff;
+// }
+
+// .hero__list {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+
+// .hero__item {
+//   position: relative;
+//   background-color: #2d383f;
+//   height: auto;
+
+//   &::before {
+//     position: absolute;
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     background: linear-gradient(112.1deg, hsla(228, 46%, 11%, 0.3) 17.2%, hsla(228, 46%, 11%, 0) 94.9%);
+//   }
+// }
+
+// .hero__wrapper {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   padding: 200px 0 80px;
+//   min-height: 800px;
+
+//   h2 {
+//     margin: 0 0 23px;
+//     padding: 0;
+//     font-size: 77px;
+//     font-weight: 800;
+//     line-height: 77px;
+//     max-width: 944px;
+//     z-index: 2;
+//   }
+
+//   p {
+//     margin: 0 0 37px;
+//     padding: 0;
+//     font-size: 17px;
+//     font-weight: 400;
+//     line-height: 24px;
+//     max-width: 464px;
+//   }
+// }
+
+// .hero__content {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .hero__btn {
+//   margin-bottom: 40px;
+// }
+
+// .hero__image {
+//   position: absolute;
+//   inset: 0;
+//   z-index: -1;
+
+//   img {
+//     display: block;
+//     max-width: 100%;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+// }
+
+// .swiper {
+//   .hero__swiper-pagination {
+//     display: flex;
+//     justify-content: flex-end;
+//     flex-wrap: wrap;
+//     padding-left: 500px;
+//     gap: 12px;
+//     right: -7px;
+//     bottom: 97px;
+//   }
+
+//   .swiper-pagination-bullet {
+//     width: 10px;
+//     height: 10px;
+//     border: 1px solid #ffffff;
+//     background-color: transparent;
+//     opacity: 1;
+//   }
+
+//   .swiper-pagination-bullet-active {
+//     background: #ffffff;
+//   }
+// }
