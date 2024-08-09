@@ -1,6 +1,6 @@
 .button {
   display: block;
-  max-width: 180px;
+  width: 180px;
   font-family: $main-font;
   font-size: 16px;
   font-weight: 500;
@@ -10,4 +10,38 @@
   color: #ffffff;
   background: #0266c1;
   cursor: pointer;
+  padding: 21px 20px 19px;
+
+  &:hover {
+    padding: 20px 20px 18px;
+    border: 1px solid #1c3374;
+    background: #ffffff;
+    color: #1c3374;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    padding: 20px 20px 18px;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    color: #1c3374;
+  }
+
+  &:active {
+    border: none;
+    padding: 21px 20px 19px;
+    color: #ffffff;
+    background: #1c3374;
+  }
+
+  &--disabled,
+  &:disabled {
+    padding: 21px 20px 19px;
+    color: #ffffff;
+    background: #999999;
+  }
 }

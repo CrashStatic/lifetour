@@ -1,4 +1,4 @@
-.page__body {
+.page {
   min-width: 320px;
   min-height: 100%;
   margin: 0;
@@ -7,6 +7,8 @@
   background-color: #ffffff;
   font-family: $main-font;
   color: #2d383f;
+}
 
-  // overflow: hidden;
+.page::-webkit-scrollbar {
+  width: 0;
 }
