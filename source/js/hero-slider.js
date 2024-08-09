@@ -14,8 +14,6 @@ const initSwiperHero = () => {
     },
 
     loop: true,
-    keyboard: true,
-    centeredSlides: true,
 
     // Default parameters
     slidesPerView: 1,
@@ -27,7 +25,7 @@ const initSwiperHero = () => {
       }
     },
 
-    breakpointsBase: 'container'
+    breakpointsBase: 'window'
   });
 };
 
