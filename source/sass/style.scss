@@ -11,13 +11,13 @@
 @import "./common/mixins";
 
 /* BLOCKS */
+@import "./blocks/page";
+@import "./blocks/page-main";
 @import "./blocks/visually-hidden";
 @import "./blocks/scroll-lock";
-@import "./blocks/page";
 @import "./blocks/container";
 @import "./blocks/header";
 @import "./blocks/navigation";
-@import "./blocks/page-main";
 @import "./blocks/hero";
 @import "./blocks/button";
 @import "./blocks/swiper";
