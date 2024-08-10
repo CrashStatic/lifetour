@@ -11,6 +11,11 @@
   position: relative;
   z-index: -1;
 
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 242px;
     padding-bottom: 392px;
