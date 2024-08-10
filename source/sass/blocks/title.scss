@@ -1,0 +1,15 @@
+.title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+
+  &::before {
+    content: attr(data-title);
+    position: absolute;
+    font-size: 26px;
+    line-height: 26px;
+    opacity: 3%;
+    bottom: 12px;
+    left: 0;
+  }
+}
