@@ -4,6 +4,8 @@
 // import 'swiper/css';
 import { initNav } from './navigation.js';
 import { initSwiperHero } from './hero-slider.js';
+import { initSwiperTours } from './tours-slider.js';
 
 initNav();
 initSwiperHero();
+initSwiperTours();

@@ -154,11 +154,21 @@
       </section>
 
       <section class="tours" id="tours" data-test="tours">
-        <div class="container">
+        <div class="tours__container container">
           <h2 class="tours__title title" data-title="Ближайшие туры">Ближайшие туры</h2>
           <div class="tours__navigation">
-            <button class="tours__navigation-prev swiper-button swiper-button-prev" type="button">Назад</button>
-            <button class="tours__navigation-next swiper-button swiper-button-next" type="button">Вперед</button>
+            <button class="tours__navigation-prev" type="button">
+              <span class="visually-hidden">Назад</span>
+              <svg aria-hidden="true" focusable="false" width="14" height="9">
+                <use href="/__spritemap#sprite-nav-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="tours__navigation-next" type="button">
+              <span class="visually-hidden">Вперед</span>
+              <svg aria-hidden="true" focusable="false" width="14" height="9">
+                <use href="/__spritemap#sprite-nav-arrow-right"></use>
+              </svg>
+            </button>
           </div>
 
           <div class="tours__swiper swiper">
@@ -175,11 +185,13 @@
                   </picture>
                 </div>
                 <div class="tours__info-wrapper">
-                  <span class="tours__info tours__info--location">Кавказ</span>
-                  <span class="tours__info tours__info--days">4 дня</span>
-                  <span class="tours__info tours__info--nights">3 ночи</span>
+                  <span class="tours__location">Кавказ</span>
+                  <div class="tours__duration">
+                    <span class="tours__days">4 дня</span>
+                    <span class="tours__nights">3 ночи</span>
+                  </div>
                 </div>
-                <h3 class="tours__name">Путешествие вокруг Эльбруса</h3>
+                <h3 class="tours__name">Путешествие вокруг&nbsp;Эльбруса</h3>
                 <div class="tours__summary">
                   <div class="tours__summary-level">
                     <span>Сложность:</span>
@@ -201,8 +213,132 @@
                   </div>
                 </div>
               </div>
+
+              <div class="tours__slide swiper-slide">
+                <div class="tours__image">
+                  <picture>
+                    <source media="(min-width: 1440px)" type="image/webp" srcset="img/tours/slide-belukha-desktop.webp 1x, img/tours/slide-belukha-desktop@2x.webp 2x" width="380" height="8416">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/tours/slide-belukha-tablet.webp 1x, img/tours/slide-belukha-tablet@2x.webp 2x" width="330" height="416">
+                    <source type="image/webp" srcset="img/tours/slide-belukha-mobile.webp 1x, img/tours/slide-belukha-mobile@2x.webp 2x" width="290" height="416">
+                    <source media="(min-width: 1440px)" type="image/jpg" srcset="img/tours/slide-belukha-desktop.jpg 1x, img/tours/slide-belukha-desktop@2x.jpg 2x" width="380" height="416">
+                    <source media="(min-width: 768px)" type="image/jpg" srcset="img/tours/slide-belukha-tablet.jpg 1x, img/tours/slide-belukha-tablet@2x.jpg 2x" width="330" height="416">
+                    <img src="img/tours/slide-belukha-mobile.jpg" srcset="img/tours/slide-belukha-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус">
+                  </picture>
+                </div>
+                <div class="tours__info-wrapper">
+                  <span class="tours__location">Алтай</span>
+                  <div class="tours__duration">
+                    <span class="tours__days">14 дней</span>
+                    <span class="tours__nights">13 ночей</span>
+                  </div>
+                </div>
+                <h3 class="tours__name">Путь к&nbsp;подножию Белухи</h3>
+                <div class="tours__summary">
+                  <div class="tours__summary-level">
+                    <span>Сложность:</span>
+                    <div class="tours__summary-stars">
+                      <span class="tours__summary-full"></span>
+                      <span class="tours__summary-full"></span>
+                      <span class="tours__summary-full"></span>
+                      <span class="tours__summary-empty"></span>
+                      <span class="tours__summary-empty"></span>
+                    </div>
+                  </div>
+                  <div class="tours__summary-date">
+                    <span>Даты набора:</span>
+                    <span>14.06&ndash;23.06</span>
+                  </div>
+                  <div class="tours__summary-group">
+                    <span>Группа:</span>
+                    <span>до&nbsp;25&nbsp;чел.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tours__slide swiper-slide">
+                <div class="tours__image">
+                  <picture>
+                    <source media="(min-width: 1440px)" type="image/webp" srcset="img/tours/slide-fisht-desktop.webp 1x, img/tours/slide-fisht-desktop@2x.webp 2x" width="380" height="8416">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/tours/slide-fisht-tablet.webp 1x, img/tours/slide-fisht-tablet@2x.webp 2x" width="330" height="416">
+                    <source type="image/webp" srcset="img/tours/slide-fisht-mobile.webp 1x, img/tours/slide-fisht-mobile@2x.webp 2x" width="290" height="416">
+                    <source media="(min-width: 1440px)" type="image/jpg" srcset="img/tours/slide-fisht-desktop.jpg 1x, img/tours/slide-fisht-desktop@2x.jpg 2x" width="380" height="416">
+                    <source media="(min-width: 768px)" type="image/jpg" srcset="img/tours/slide-fisht-tablet.jpg 1x, img/tours/slide-fisht-tablet@2x.jpg 2x" width="330" height="416">
+                    <img src="img/tours/slide-fisht-mobile.jpg" srcset="img/tours/slide-fisht-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус">
+                  </picture>
+                </div>
+                <div class="tours__info-wrapper">
+                  <span class="tours__location">Адыгея</span>
+                  <div class="tours__info-duration">
+                    <span class="tours__days">7 дней</span>
+                    <span class="tours__nights">6 ночей</span>
+                  </div>
+                </div>
+                <h3 class="tours__name">Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
+                <div class="tours__summary">
+                  <div class="tours__summary-level">
+                    <span>Сложность:</span>
+                    <div class="tours__summary-stars">
+                      <span class="tours__summary-full"></span>
+                      <span class="tours__summary-full"></span>
+                      <span class="tours__summary-full"></span>
+                      <span class="tours__summary-full"></span>
+                      <span class="tours__summary-empty"></span>
+                    </div>
+                  </div>
+                  <div class="tours__summary-date">
+                    <span>Даты набора:</span>
+                    <span>15.07&ndash;19.07</span>
+                  </div>
+                  <div class="tours__summary-group">
+                    <span>Группа:</span>
+                    <span>до&nbsp;22&nbsp;чел.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tours__slide swiper-slide">
+                <div class="tours__image">
+                  <picture>
+                    <source media="(min-width: 1440px)" type="image/webp" srcset="img/tours/slide-manaraga-desktop.webp 1x, img/tours/slide-manaraga-desktop@2x.webp 2x" width="380" height="8416">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/tours/slide-manaraga-tablet.webp 1x, img/tours/slide-manaraga-tablet@2x.webp 2x" width="330" height="416">
+                    <source type="image/webp" srcset="img/tours/slide-manaraga-mobile.webp 1x, img/tours/slide-manaraga-mobile@2x.webp 2x" width="290" height="416">
+                    <source media="(min-width: 1440px)" type="image/jpg" srcset="img/tours/slide-manaraga-desktop.jpg 1x, img/tours/slide-manaraga-desktop@2x.jpg 2x" width="380" height="416">
+                    <source media="(min-width: 768px)" type="image/jpg" srcset="img/tours/slide-manaraga-tablet.jpg 1x, img/tours/slide-manaraga-tablet@2x.jpg 2x" width="330" height="416">
+                    <img src="img/tours/slide-manaraga-mobile.jpg" srcset="img/tours/slide-manaraga-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус">
+                  </picture>
+                </div>
+                <div class="tours__info-wrapper">
+                  <span class="tours__location">Урал</span>
+                  <div class="tours__duration">
+                    <span class="tours__days">9 дней</span>
+                    <span class="tours__nights">10 ночей</span>
+                  </div>
+                </div>
+                <h3 class="tours__name">Восхождение Манарага</h3>
+                <div class="tours__summary">
+                  <div class="tours__summary-level">
+                    <span>Сложность:</span>
+                    <div class="tours__summary-stars">
+                      <span class="tours__summary-full"></span>
+                      <span class="tours__summary-full"></span>
+                      <span class="tours__summary-full"></span>
+                      <span class="tours__summary-full"></span>
+                      <span class="tours__summary-full"></span>
+                    </div>
+                  </div>
+                  <div class="tours__summary-date">
+                    <span>Даты набора:</span>
+                    <span>12.07&ndash;19.07</span>
+                  </div>
+                  <div class="tours__summary-group">
+                    <span>Группа:</span>
+                    <span>до&nbsp;7&nbsp;чел.</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <a class="tours__link" href="#">Показать все туры</a>
         </div>
       </section>
