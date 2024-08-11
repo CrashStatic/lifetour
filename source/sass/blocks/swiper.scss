@@ -12,12 +12,12 @@
   }
 
   &:focus-visible {
-    outline: 1px solid hsla(0, 0%, 100%, 0.50);
+    outline: 1px solid hsla(0, 0%, 100%, 0.5);
     outline-offset: 2px;
   }
 
   &:active {
     border: 1px solid #ffffff;
-    background: hsla(0, 0%, 100%, 0.50);
+    background: hsla(0, 0%, 100%, 0.5);
   }
 }
