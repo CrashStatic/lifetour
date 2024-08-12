@@ -1,28 +1,27 @@
-const bodeElement = document.querySelector('.page__body');
-const headerElement = document.querySelector('.header__container');
+const bodeElement = document.querySelector('.page');
+const headerElement = bodeElement.querySelector('.header__container');
 const navButton = headerElement.querySelector('.header__nav-toggle');
-const navLink = headerElement.querySelector('.navigation__link');
+const navLinks = headerElement.querySelectorAll('.navigation__link');
 
 const initNav = () => {
-  if (!headerElement || !navButton || !navLink) {
+  if (!headerElement || !navButton || !navLinks) {
     return;
   }
 
-  navButton.addEventListener('click', () => {
-    if (headerElement.classList.contains('header__container--open')) {
-      headerElement.classList.remove('header__container--open');
-      bodeElement.classList.remove('scroll-lock');
-    } else {
-      headerElement.classList.add('header__container--open');
-      bodeElement.classList.add('scroll-lock');
-    }
-  });
+  const toggleMenu = () => {
+    headerElement.classList.toggle('header__container--open');
+    bodeElement.classList.toggle('scroll-lock');
+  };
 
-  navLink.addEventListener('click', () => {
-    headerElement.classList.remove('header__container--open');
-    bodeElement.classList.remove('scroll-lock');
-  });
+  navButton.addEventListener('click', toggleMenu);
 
+  navLinks.forEach((item) => {
+    item.addEventListener('click', () => {
+      if (headerElement.classList.contains('header__container--open')) {
+        toggleMenu();
+      }
+    });
+  });
 };
 
 export { initNav };

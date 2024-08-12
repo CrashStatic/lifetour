@@ -44,7 +44,6 @@ const initSwiperHero = () => {
     for (const link of swiperLinks) {
       link.setAttribute('tabindex', '-1');
     }
-
     setTabIndex();
   });
 };

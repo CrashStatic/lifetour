@@ -3,3 +3,57 @@
   margin: 0;
   list-style: none;
 }
+
+@mixin swiper-button {
+  display: block;
+  width: 37px;
+  height: 35px;
+  background: #0266c1;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  svg {
+    color: #ffffff;
+  }
+
+  &:hover {
+    border: 1px solid #1c3374;
+    background: #ffffff;
+
+    svg {
+      color: #1c3374;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    border: none;
+    background: #ffffff;
+
+    svg {
+      color: #1c3374;
+    }
+  }
+
+  &:active {
+    background: #1c3374;
+
+    svg {
+      color: #ffffff;
+    }
+  }
+
+  &:disabled {
+    background: #999999;
+    pointer-events: none;
+
+    svg {
+      color: #ffffff;
+    }
+  }
+}

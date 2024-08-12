@@ -1,0 +1,90 @@
+.training {
+  padding-top: 37px;
+  padding-bottom: 20px;
+}
+
+.training__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.training p {
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.training__subtitle {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.training__navigation {
+  display: none;
+}
+
+.training__trainer {
+  margin-bottom: 25px;
+}
+
+.training__slide {
+  padding: 14px;
+  border: 1px solid hsla(209, 98%, 38%, 0.1);
+}
+
+.training__image {
+  display: block;
+  width: 260px;
+  height: 200px;
+  margin-bottom: 16px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.training__info {
+  display: grid;
+  row-gap: 15px;
+  grid-template-columns: min-content auto;
+}
+
+.training__info h4 {
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0;
+  grid-column: 1 / 2;
+}
+
+.training__info p {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  grid-column: 1 / 3;
+}
+
+.training__link {
+  display: flex;
+  justify-self: end;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 22px;
+  border: 1px solid hsla(203, 17%, 21%, 0.3);
+  grid-column: 2 / 3;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 8px;
+    mask-image: url("/__spritemap#sprite-vk-view");
+    mask-repeat: no-repeat;
+    background-color: #2d383f;
+  }
+}

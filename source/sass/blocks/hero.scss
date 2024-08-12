@@ -7,7 +7,7 @@
   height: auto;
   background: #6995c9;
   padding-top: 40px;
-  padding-bottom: 46px;
+  padding-bottom: 36px;
   position: relative;
   z-index: -1;
 
@@ -18,7 +18,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 242px;
-    padding-bottom: 392px;
+    padding-bottom: 382px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +46,7 @@
   min-height: 472px;
   justify-content: center;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 99px;
