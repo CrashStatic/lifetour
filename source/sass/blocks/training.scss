@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 42px;
   }
 }
 
@@ -12,6 +12,10 @@
   position: relative;
   margin: 0;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .training p {
@@ -21,7 +25,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 }
 
@@ -35,13 +39,17 @@
   @media (min-width: $tablet-width) {
     font-size: 25px;
     line-height: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
   }
 }
 
 .training__trainer {
   margin-bottom: 25px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .training__navigation {
@@ -58,6 +66,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    right: 0;
+    top: -3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +85,7 @@
   padding: 14px;
   border: 1px solid hsla(209, 98%, 38%, 0.1);
   height: auto;
+  background: #ffffff;
 }
 
 .training__image {

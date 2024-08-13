@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 104px;
+    margin-bottom: 100px;
   }
 }
 
@@ -91,6 +91,7 @@
   @media (min-width: $tablet-width) {
     &::after {
       left: 0;
+      top: 2px;
     }
   }
 }
@@ -105,11 +106,15 @@
     position: absolute;
     top: 0;
     left: 29px;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    &::after {
       left: 0;
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
+      top: 2px;
     }
   }
 }
@@ -124,9 +129,15 @@
     position: absolute;
     top: 0;
     left: 29px;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    &::after {
       left: 0;
+      top: 2px;
     }
   }
 }
@@ -141,15 +152,24 @@
     position: absolute;
     top: 0;
     left: 29px;
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    &::after {
       left: 0;
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
+      top: 2px;
     }
   }
 }
 
 .process .process__description {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
