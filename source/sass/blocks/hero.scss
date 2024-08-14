@@ -1,10 +1,6 @@
 .hero__swiper .hero__slide {
   width: 100%;
   height: auto;
-}
-
-.hero__slide {
-  height: auto;
   background: #6995c9;
   padding-top: 40px;
   padding-bottom: 36px;
@@ -18,12 +14,13 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 242px;
-    padding-bottom: 382px;
+    padding-bottom: 357px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1200px;
     padding-top: 101px;
-    padding-bottom: 258px;
+    padding-bottom: 80px;
   }
 }
 
@@ -57,6 +54,7 @@
     text-align: start;
     min-height: 342px;
     margin: 0;
+    max-width: 1440px;
   }
 }
 
@@ -131,6 +129,10 @@
   }
 }
 
+.hero__container {
+  position: relative;
+}
+
 .hero__decor {
   display: none;
   position: relative;
@@ -197,9 +199,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    position: absolute;
-    bottom: 80px;
-    left: 120px;
+    margin-top: 134px;
   }
 }
 
@@ -230,7 +230,21 @@
   }
 }
 
-.hero__pagination {
+.hero__pagination-container {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 92px;
+    z-index: 2;
+    font-size: 0;
+    line-height: 0;
+    width: 1440px;
+    min-height: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.hero .hero__pagination {
   --swiper-pagination-bullet-width: 16px;
   --swiper-pagination-bullet-height: 16px;
   --swiper-pagination-bullet-horizontal-gap: 10px;
@@ -247,9 +261,14 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    width: 100%;
+    max-width: 400px;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: end;
-    padding-right: 110px;
+    position: unset;
 
-    --swiper-pagination-bottom: 92px;
+    --swiper-pagination-bottom: 0;
+    --swiper-pagination-bullet-horizontal-gap: 0;
   }
 }

@@ -63,6 +63,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 660px;
+    padding-top: 45px;
   }
 }
 
@@ -99,11 +100,12 @@
   @media (min-width: $desktop-width) {
     font-size: 35px;
     line-height: 35px;
+    margin-bottom: 59px;
 
     &::before {
       font-size: 55px;
       line-height: 55px;
-      bottom: 0;
+      bottom: 19px;
     }
   }
 }
@@ -120,6 +122,12 @@
     line-height: 18px;
     margin-bottom: 11px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 16px;
+  }
 }
 
 .about__container p {
@@ -132,9 +140,15 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    max-width: 585px;
 
     &:not(:last-child) {
       margin-bottom: 29px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 22px;
   }
 }

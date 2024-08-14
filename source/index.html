@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lifetour - организация походов в горы">
     <title>Lifetour</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon-32x32.png" type="image/png" >
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="fonts/montserrat/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat/Montserrat-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat//Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -66,14 +71,16 @@
         <div class="hero__swiper swiper">
           <div class="hero__wrapper swiper-wrapper">
             <div class="hero__slide swiper-slide" tabindex="-1">
-              <div class="hero__description container">
-                <h2>Захватывающие вершины Кавказа</h2>
-                <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через&nbsp;потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
-                <a class="hero__button button" href="#">Смотреть тур</a>
-              </div>
-              <div class="hero__details">
-                <span class="hero__detail hero__detail--days">6&nbsp;дней/5 ночей</span>
-                <span class="hero__detail hero__detail--level">Высокая сложность</span>
+              <div class="hero__container container">
+                <div class="hero__description">
+                  <h2>Захватывающие вершины Кавказа</h2>
+                  <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через&nbsp;потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
+                  <a class="hero__button button" href="#">Смотреть тур</a>
+                </div>
+                <div class="hero__details">
+                  <span class="hero__detail hero__detail--days">6&nbsp;дней/5 ночей</span>
+                  <span class="hero__detail hero__detail--level">Высокая сложность</span>
+                </div>
               </div>
               <div class="hero__image">
                 <picture>
@@ -88,14 +95,16 @@
             </div>
 
             <div class="hero__slide hero__slide--kamchatka swiper-slide">
-              <div class="hero__description container">
-                <h2>Невероятная природа Камчатки</h2>
-                <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
-                <a class="hero__button button" href="#">Смотреть тур</a>
-              </div>
-              <div class="hero__details">
-                <span class="hero__detail hero__detail--days">6&nbsp;дней/5 ночей</span>
-                <span class="hero__detail hero__detail--level">Высокая сложность</span>
+              <div class="hero__container container">
+                <div class="hero__description">
+                  <h2>Невероятная природа Камчатки</h2>
+                  <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                  <a class="hero__button button" href="#">Смотреть тур</a>
+                </div>
+                <div class="hero__details">
+                  <span class="hero__detail hero__detail--days">9&nbsp;дней/10 ночей</span>
+                  <span class="hero__detail hero__detail--level">Средняя сложность</span>
+                </div>
               </div>
               <div class="hero__image">
                 <picture>
@@ -128,14 +137,16 @@
             </div>
 
             <div class="hero__slide swiper-slide">
-              <div class="hero__description container">
-                <h2>Магические пейзажи Алтайского Края</h2>
-                <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
-                <a class="hero__button button" href="#">Смотреть тур</a>
-              </div>
-              <div class="hero__details">
-                <span class="hero__detail hero__detail--days">6&nbsp;дней/5 ночей</span>
-                <span class="hero__detail hero__detail--level">Высокая сложность</span>
+              <div class="hero__container container">
+                <div class="hero__description">
+                  <h2>Магические пейзажи Алтайского Края</h2>
+                  <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+                  <a class="hero__button button" href="#">Смотреть тур</a>
+                </div>
+                <div class="hero__details">
+                  <span class="hero__detail hero__detail--days">8&nbsp;дней/7 ночей</span>
+                  <span class="hero__detail hero__detail--level">Лёгкая сложность</span>
+                </div>
               </div>
               <div class="hero__image">
                 <picture>
@@ -149,7 +160,9 @@
               </div>
             </div>
           </div>
-          <div class="hero__pagination swiper-pagination"></div>
+          <div class="hero__pagination-container container">
+            <div class="hero__pagination swiper-pagination"></div>
+          </div>
         </div>
       </section>
 
@@ -471,9 +484,9 @@
         <div class="about__container container">
           <h2 data-title="О нас">О нас</h2>
           <h3>История компании</h3>
-          <p>В&nbsp;далёком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения, нам&nbsp;это&nbsp;настолько понравилось, что&nbsp;мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005&nbsp;году мы&nbsp;основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+          <p>В&nbsp;далёком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения, нам&nbsp;это&nbsp;настолько понравилось, что&nbsp;мы&nbsp;этим стали жить. Спустя&nbsp;5&nbsp;лет, в&nbsp;2005&nbsp;году мы&nbsp;основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
           <h3>Наша цель</h3>
-          <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берём на&nbsp;себя все&nbsp;организационные вопросы. При&nbsp;организации мы&nbsp;обязательно учтём все ваши пожелания. Вам&nbsp;останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
+          <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берём на&nbsp;себя все&nbsp;организационные вопросы. При&nbsp;организации мы&nbsp;обязательно учтём все&nbsp;ваши пожелания. Вам&nbsp;останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
         </div>
       </section>
 
