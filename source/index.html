@@ -490,8 +490,108 @@
         </div>
       </section>
 
+      <section class="reviews" id="reviews" data-test="reviews">
+        <div class="reviews__container container">
+          <h2 class="reviews__title title" data-title="Отзывы">Отзывы</h2>
+          <div class="reviews__navigation">
+            <button class="reviews__navigation-prev" type="button">
+              <span class="visually-hidden">Назад</span>
+              <svg aria-hidden="true" focusable="false" width="14" height="9">
+                <use href="/__spritemap#sprite-nav-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="reviews__navigation-next" type="button">
+              <span class="visually-hidden">Вперед</span>
+              <svg aria-hidden="true" focusable="false" width="14" height="9">
+                <use href="/__spritemap#sprite-nav-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
 
-      <!-- <section class="reviews" id="reviews" data-test="reviews"></section> -->
+        <div class="reviews__swiper swiper">
+          <div class="reviews__wrapper swiper-wrapper">
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__inner">
+                <div class="reviews__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviews/frolov.webp 1x, img/reviews/frolov@2x.webp 2x" width="250" height="169">
+                    <img src="img/reviews/frolov.jpg" srcset="img/reviews/frolov@2x.jpg 2x" width="250" height="169" alt="Фотография Фролова Александра">
+                  </picture>
+                </div>
+                <div class="reviews__text">
+                  <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, все показали. Делились историями о&nbsp;местах, людях, культуре места.</p>
+                  <p>С&nbsp;уверенностью могу сказать, что&nbsp;жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Ещё никогда не&nbsp;отдыхал так&nbsp;душой и&nbsp;телом. Всем очень рекомендую!</p>
+                  <div class="reviews__author">
+                    <h3>Фролов Александр</h3>
+                    <p>38&nbsp;лет, Москва</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__inner">
+                <div class="reviews__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviews/solovyov.webp 1x, img/reviews/solovyov@2x.webp 2x" width="250" height="169">
+                    <img src="img/reviews/solovyov.jpg" srcset="img/reviews/solovyov@2x.jpg 2x" width="250" height="169" alt="Фотография Ивана Соловьёва">
+                  </picture>
+                </div>
+                <div class="reviews__text">
+                  <p>Хороший полноценный поход с&nbsp;разнообразными локациями. В&nbsp;начале дорога идёт по&nbsp;лыжне, далее прошли мимо полигона, по&nbsp;болотам, у&nbsp;озёр и&nbsp;лесных ручьёв, остатков дач&nbsp;конца 19&nbsp;века. Было очень интересно!</p>
+                  <p>Инструктор Федор дружелюбный, внимательный к&nbsp;технике безопасности и&nbsp;своим туристам. Всем советую этот&nbsp;тур.</p>
+                  <div class="reviews__author">
+                    <h3>Иван Соловьёв</h3>
+                    <p>25&nbsp;лет, Владивосток</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__inner">
+                <div class="reviews__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviews/bazhenova.webp 1x, img/reviews/bazhenova@2x.webp 2x" width="250" height="169">
+                    <img src="img/reviews/bazhenova.jpg" srcset="img/reviews/bazhenova@2x.jpg 2x" width="250" height="169" alt="Фотография Евгении Баженовой">
+                  </picture>
+                </div>
+                <div class="reviews__text">
+                  <p>Ранее не&nbsp;ходила на&nbsp;такие длинные дистанции. В&nbsp;первый день прошли около 30&nbsp;км, физически я&nbsp;устала на&nbsp;18&nbsp;км, поэтому не&nbsp;была уверена, пройду&nbsp;ли до&nbsp;конца. Но&nbsp;я&nbsp;справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.</p>
+                  <p>Спасибо ребятам, инструкторам за&nbsp;помощь и&nbsp;поддержку! Я&nbsp;была рада быть в&nbsp;такой компании.</p>
+                  <div class="reviews__author">
+                    <h3>Евгения Баженова</h3>
+                    <p>23&nbsp;года, Кострома</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews__slide swiper-slide">
+              <div class="reviews__inner">
+                <div class="reviews__image">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviews/pirogova.webp 1x, img/reviews/pirogova@2x.webp 2x" width="250" height="169">
+                    <img src="img/reviews/pirogova.jpg" srcset="img/reviews/pirogova@2x.jpg 2x" width="250" height="169" alt="Фотография Елены Пироговой">
+                  </picture>
+                </div>
+                <div class="reviews__text">
+                  <p>Это был опыт, изменивший мою жизнь! Думала, не&nbsp;справлюсь, но&nbsp;все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и&nbsp;препятствия, взбираешься на&nbsp;вершину.</p>
+                  <p>У&nbsp;нас собралась потрясающая команда. Все друг друга поддерживали, по&nbsp;вечерам мы&nbsp;сидели вместе у&nbsp;костра и&nbsp;пели песни. Обязательно повторю такое приключение!</p>
+                  <div class="reviews__author">
+                    <h3>Елена Пирогова</h3>
+                    <p>37&nbsp;лет, Тюмень</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
       <!-- <section class="adv" id="adv" data-test="adv"></section> -->
       <!-- <section class="gallery" id="gallery" data-test="gallery"></section> -->
       <!-- <section class="form" id="form" data-test="form"></section> -->
