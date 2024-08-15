@@ -53,9 +53,11 @@
 
 .reviews .reviews__swiper {
   padding: 14px 15px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     padding: 14px 45px;
+    width: unset;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,7 +127,7 @@
 
 .reviews__text {
   max-height: 259px;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   @media (min-width: $tablet-width) {
     max-height: 233px;

@@ -1,0 +1,73 @@
+.adv__container {
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+.adv__title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 37px;
+
+  &::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.adv__swiper .adv__wrapper {
+  flex-direction: column;
+  gap: 15px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.adv__slide {
+  background: #ffffff;
+  border: 1px solid hsla(209, 98%, 38%, 0.1);
+  padding: 20px 9px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #0266c1;
+    margin: 0 auto 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+  }
+}
+
+.adv__slide--safety {
+  &::before {
+    background-image: url("/__spritemap#sprite-safety-view");
+  }
+}
+
+.adv__slide--expertise {
+  &::before {
+    background-image: url("/__spritemap#sprite-expertise-view");
+  }
+}
+
+.adv__slide--equipment {
+  &::before {
+    background-image: url("/__spritemap#sprite-equipment-view");
+  }
+}
+
+.adv__slide--route {
+  &::before {
+    background-image: url("/__spritemap#sprite-route-view");
+  }
+}
+
+.adv__slide--nature {
+  &::before {
+    background-image: url("/__spritemap#sprite-nature-view");
+  }
+}

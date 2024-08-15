@@ -7,11 +7,13 @@ import { initSwiperHero } from './hero-slider.js';
 import { initSwiperTours } from './tours-slider.js';
 import { initSwiperTraining } from './training-slider.js';
 import { initSwiperReviews } from './reviews-slider.js';
+import { initSwiperAdv } from './adv-slider.js';
 
 initNav();
 initSwiperHero();
 initSwiperTours();
 initSwiperTraining();
 initSwiperReviews();
+initSwiperAdv();
 
 // window.addEventListener('resize', initSwiperTraining);

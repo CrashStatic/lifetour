@@ -12,6 +12,10 @@ const initSwiperTraining = () => {
     },
 
     loop: false,
+    // observer: true,
+    // observeParents: true,
+    // updateOnWindowResize: true,
+    // rebuildOnUpdate: true,
 
     // Responsive breakpoints
     breakpoints: {
@@ -38,21 +42,38 @@ const initSwiperTraining = () => {
     },
   });
 
-  // let oldWidth = window.innerWidth;
-  // window.onresize = function () {
-  //   const newWidth = window.innerWidth;
-  //   if (newWidth !== oldWidth) {
-
-  //     trainingSwiper.update();
-  //     oldWidth = newWidth;
-  //   }
-  // };
+  // window.addEventListener('resize', () => {
+  //   // trainingSwiper.destroy(true, true);
+  //   // trainingSwiper.init();
+  //   // trainingSwiper.updateSize();
+  //   // trainingSwiper.reInit();
+  // });
 
   // window.addEventListener('resize', () => {
-  //   trainingSwiper.destroy();
-  //   trainingSwiper.init();
+  //   // trainingSwiper.destroy(true, true);
+  //   // trainingSwiper.init();
+  //   // trainingSwiper.updateSize();
+  //   trainingSwiper.destroy(true, true);
+  //   trainingSwiper = new Swiper('.training__swiper', settings);
   // });
 };
+
+// window.addEventListener('resize', () => {
+//   trainingSwiper.destroy();
+//   trainingSwiper.init();
+// });
+
+// const changeDirection = (slider) => {
+//   window.innerWidth <== 1024 ? trainingSwiper.destroy(false, true) : trainingSwiper.init();
+// };
+
+// window.addEventListener("resize", () => {
+//   changeDirection(mainSwiper);
+//   mainSwiper.updateSize();
+
+// });
+
+// changeDirection(mainSwiper);
 
 // window.addEventListener('resize', initSwiperTraining);
 

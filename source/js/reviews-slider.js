@@ -18,7 +18,7 @@ const initSwiperReviews = () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 15,
+        spaceBetween: 30,
         // autoHeight: true,
         allowTouchMove: true
       },
