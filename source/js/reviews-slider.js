@@ -13,6 +13,7 @@ const initSwiperReviews = () => {
 
     loop: false,
     slidesPerView: 1,
+    autoHeight: true,
 
     // Responsive breakpoints
     breakpoints: {
@@ -36,6 +37,5 @@ const initSwiperReviews = () => {
     },
   });
 };
-
 
 export { initSwiperReviews };
