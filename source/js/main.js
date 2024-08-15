@@ -13,3 +13,5 @@ initSwiperHero();
 initSwiperTours();
 initSwiperTraining();
 initSwiperReviews();
+
+// window.addEventListener('resize', initSwiperTraining);

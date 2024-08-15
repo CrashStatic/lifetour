@@ -16,27 +16,44 @@ const initSwiperTraining = () => {
     // Responsive breakpoints
     breakpoints: {
       320: {
+        initialSlide: 2,
         slidesPerView: 1,
         spaceBetween: 15,
-        initialSlide: 2,
         allowTouchMove: true
       },
 
       768: {
+        initialSlide: 0,
         slidesPerView: 3,
         spaceBetween: 20,
-        initialSlide: 0,
         allowTouchMove: true
       },
 
       1440: {
+        initialSlide: 0,
         slidesPerView: 4,
         spaceBetween: 20,
-        initialSlide: 0,
         allowTouchMove: false
       }
     },
   });
+
+  // let oldWidth = window.innerWidth;
+  // window.onresize = function () {
+  //   const newWidth = window.innerWidth;
+  //   if (newWidth !== oldWidth) {
+
+  //     trainingSwiper.update();
+  //     oldWidth = newWidth;
+  //   }
+  // };
+
+  // window.addEventListener('resize', () => {
+  //   trainingSwiper.destroy();
+  //   trainingSwiper.init();
+  // });
 };
+
+// window.addEventListener('resize', initSwiperTraining);
 
 export { initSwiperTraining };

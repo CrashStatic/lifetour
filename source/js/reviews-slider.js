@@ -13,24 +13,24 @@ const initSwiperReviews = () => {
 
     loop: false,
     slidesPerView: 1,
-    autoHeight: true,
 
     // Responsive breakpoints
     breakpoints: {
       320: {
         slidesPerView: 1,
         spaceBetween: 15,
+        // autoHeight: true,
         allowTouchMove: true
       },
 
       768: {
-        // slidesPerView: 2,
+        slidesPerView: 'auto',
         spaceBetween: 30,
         allowTouchMove: true
       },
 
       1440: {
-        // slidesPerView: ,
+        slidesPerView: 'auto',
         spaceBetween: 120,
         allowTouchMove: false
       }
