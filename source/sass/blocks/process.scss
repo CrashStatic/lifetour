@@ -111,15 +111,12 @@
       bottom: 6px;
     }
   }
-}
 
-.process__item--map {
   &::after {
     content: "";
     display: block;
     width: 25px;
     height: 25px;
-    background-image: url("../__spritemap#sprite-map-view");
     position: absolute;
     top: 0;
     left: 29px;
@@ -137,6 +134,12 @@
       left: 10px;
       top: 10px;
     }
+  }
+}
+
+.process__item--map {
+  &::after {
+    background-image: url("/__spritemap#sprite-map-view");
   }
 }
 
@@ -147,23 +150,12 @@
 
   &::after {
     content: "";
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-image: url("../__spritemap#sprite-trees-view");
-    position: absolute;
-    top: 0;
-    left: 29px;
+    background-image: url("/__spritemap#sprite-trees-view");
   }
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-
-    &::after {
-      left: 0;
-      top: 2px;
-    }
 
     br {
       display: block;
@@ -171,11 +163,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    &::after {
-      left: 10px;
-      top: 10px;
-    }
-
     br {
       display: none;
     }
@@ -188,31 +175,12 @@
 
 .process__item--boots {
   &::after {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-image: url("../__spritemap#sprite-boots-view");
-    position: absolute;
-    top: 0;
-    left: 29px;
+    background-image: url("/__spritemap#sprite-boots-view");
   }
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-
-    &::after {
-      left: 0;
-      top: 2px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      left: 10px;
-      top: 10px;
-    }
   }
 }
 
@@ -222,24 +190,12 @@
   }
 
   &::after {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 25px;
-    background-image: url("../__spritemap#sprite-mountains-view");
-    position: absolute;
-    top: 0;
-    left: 29px;
+    background-image: url("/__spritemap#sprite-mountains-view");
   }
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-
-    &::after {
-      left: 0;
-      top: 2px;
-    }
 
     br {
       display: none;
@@ -251,11 +207,6 @@
 
     br {
       display: block;
-    }
-
-    &::after {
-      left: 10px;
-      top: 10px;
     }
   }
 }
