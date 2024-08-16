@@ -77,4 +77,13 @@ const initSwiperTraining = () => {
 
 // window.addEventListener('resize', initSwiperTraining);
 
+// const initSwiperTraining = () => {
+//   const swiper = createAdvSlider();
+
+//   window.addEventListener('resize', () => {
+//     swiper.destroy();
+//     createAdvSlider();
+//   });
+// };
+
 export { initSwiperTraining };
