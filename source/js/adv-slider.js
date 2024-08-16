@@ -1,5 +1,5 @@
-import Swiper from 'swiper';
-import 'swiper/css';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 import 'swiper/css/navigation';
 
 const initSwiperAdv = () => {
@@ -18,12 +18,15 @@ const initSwiperAdv = () => {
     breakpoints: {
       1440: {
         enabled: true,
-        // centeredSlides: true,
-        slidesPerGroup: 2,
-        initialSlide: 3,
-        // slidesPerView: 1,
+        freeMode: true,
+        centeredSlides: true,
+        slidesPerGroup: 1,
+        initialSlide: 2,
+        // slidesPerView: 3.75,
         slidesPerView: 'auto',
-        spaceBetween: 120,
+        // loopAddBlankSlides: true,
+        // loopAdditionalSlides: 4,
+        spaceBetween: 30,
         allowTouchMove: false
       }
     },
