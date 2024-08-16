@@ -1,6 +1,5 @@
 .reviews {
   padding-top: 37px;
-  padding-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
@@ -14,7 +13,7 @@
 }
 
 .reviews__container {
-  margin-bottom: 17px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -52,7 +51,7 @@
 }
 
 .reviews .reviews__swiper {
-  padding: 14px 15px;
+  padding: 5px 15px 2px;
   width: 320px;
 
   @media (min-width: $tablet-width) {
@@ -62,6 +61,14 @@
 
   @media (min-width: $desktop-width) {
     padding: 14px 130px;
+  }
+}
+
+.reviews__wrapper {
+  min-height: 502px;
+
+  @media (min-width: $tablet-width) {
+    min-height: unset;
   }
 }
 
@@ -126,18 +133,18 @@
 }
 
 .reviews__text {
-  max-height: 259px;
-  overflow-y: auto;
+  // max-height: 259px;
+  // overflow-y: auto;
 
   @media (min-width: $tablet-width) {
-    max-height: 233px;
+    // max-height: 233px;
     display: flex;
     flex-direction: column;
     margin-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    max-height: 253px;
+    // max-height: 253px;
     margin-top: -2px;
   }
 }

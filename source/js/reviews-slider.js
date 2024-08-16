@@ -19,7 +19,7 @@ const initSwiperReviews = () => {
       320: {
         slidesPerView: 1,
         spaceBetween: 30,
-        // autoHeight: true,
+        autoHeight: true,
         allowTouchMove: true
       },
 
