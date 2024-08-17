@@ -18,14 +18,14 @@ const initSwiperAdv = () => {
     breakpoints: {
       1440: {
         enabled: true,
-        freeMode: true,
+        // freeMode: true,
         centeredSlides: true,
-        slidesPerGroup: 1,
+        slidesPerGroup: 2,
         initialSlide: 2,
-        // slidesPerView: 3.75,
+        // slidesPerView: 3,
         slidesPerView: 'auto',
         // loopAddBlankSlides: true,
-        // loopAdditionalSlides: 4,
+        // loopAdditionalSlides: 0.25,
         spaceBetween: 30,
         allowTouchMove: false
       }

@@ -29,6 +29,12 @@
 .reviews__title {
   position: relative;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      bottom: 19px;
+    }
+  }
 }
 
 .reviews__navigation {
