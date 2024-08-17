@@ -2,27 +2,27 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
 
-// const sliderElement = document.querySelector('.adv__wrapper');
-// const fragment = document.createDocumentFragment();
-// const slides = document.querySelectorAll('.adv__slide');
+const sliderElement = document.querySelector('.adv__wrapper');
+const fragment = document.createDocumentFragment();
+const slides = document.querySelectorAll('.adv__slide');
 
-// const renderSlider = (container, slider) => {
-//   if (window.innerWidth > 1439) {
-//     slider.forEach((slide) => {
-//       const doubleSlide = slide.cloneNode(true);
-//       fragment.appendChild(doubleSlide);
-//     });
+const renderSlider = (container, slider) => {
+  if (window.innerWidth > 1439) {
+    slider.forEach((slide) => {
+      const doubleSlide = slide.cloneNode(true);
+      fragment.appendChild(doubleSlide);
+    });
 
-//     container.appendChild(fragment);
-//   }
-// };
+    container.appendChild(fragment);
+  }
+};
 
-// let advantagesSwiper;
+let advantagesSwiper;
 
 const initSwiperAdv = () => {
-  // renderSlider(sliderElement, slides);
-  // advantagesSwiper = new Swiper('.adv__swiper', {
-  new Swiper('.adv__swiper', {
+  renderSlider(sliderElement, slides);
+  advantagesSwiper = new Swiper('.adv__swiper', {
+  // new Swiper('.adv__swiper', {
 
     // Navigation arrows
     navigation: {
@@ -40,7 +40,7 @@ const initSwiperAdv = () => {
         // freeMode: true,
         centeredSlides: true,
         slidesPerGroup: 2,
-        initialSlide: 2,
+        initialSlide: 3,
         // slidesPerView: 3,
         slidesPerView: 'auto',
         // loopAddBlankSlides: true,
@@ -53,15 +53,15 @@ const initSwiperAdv = () => {
   });
 };
 
-// const convertSwiper = () => {
-//   if (window.matchMedia <= 1439 && advantagesSwiper) {
-//     advantagesSwiper.destroy();
-//     advantagesSwiper = '';
-//   } else if (advantagesSwiper && !advantagesSwiper.initialized) {
-//     initSwiperAdv();
-//   }
-// };
+const convertSwiper = () => {
+  if (window.matchMedia <= 1439 && advantagesSwiper) {
+    advantagesSwiper.destroy();
+    advantagesSwiper = '';
+  } else if (advantagesSwiper && !advantagesSwiper.initialized) {
+    initSwiperAdv();
+  }
+};
 
-// window.addEventListener('resize', convertSwiper);
+window.addEventListener('resize', convertSwiper);
 
 export { initSwiperAdv };
