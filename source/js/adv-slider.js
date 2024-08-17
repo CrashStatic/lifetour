@@ -2,30 +2,26 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
 
-const slider = document.querySelector('.adv__wrapper');
+// const sliderElement = document.querySelector('.adv__wrapper');
+// const fragment = document.createDocumentFragment();
+// const slides = document.querySelectorAll('.adv__slide');
 
-const fragment = document.createDocumentFragment();
-const slides = document.querySelectorAll('.adv__slide');
-// const doubleSlider = slides.forEach((slide) => {
-//   const doubleSlide = slide.cloneNode(true);
-//   fragment.appendChild(doubleSlide);
-// });
+// const renderSlider = (container, slider) => {
+//   if (window.innerWidth > 1439) {
+//     slider.forEach((slide) => {
+//       const doubleSlide = slide.cloneNode(true);
+//       fragment.appendChild(doubleSlide);
+//     });
 
-const renderSlider = (container, sliders) => {
-  sliders.forEach((slide) => {
-    const doubleSlide = slide.cloneNode(true);
-    fragment.appendChild(doubleSlide);
-  });
+//     container.appendChild(fragment);
+//   }
+// };
 
-  container.appendChild(fragment);
-};
-
-renderSlider(slider, slides);
-
-// const newSlider = document.querySelector('.adv__wrapper').appendChild(document.querySelector('.adv__slide').cloneNode(true));
-
+// let advantagesSwiper;
 
 const initSwiperAdv = () => {
+  // renderSlider(sliderElement, slides);
+  // advantagesSwiper = new Swiper('.adv__swiper', {
   new Swiper('.adv__swiper', {
 
     // Navigation arrows
@@ -50,10 +46,22 @@ const initSwiperAdv = () => {
         // loopAddBlankSlides: true,
         // loopAdditionalSlides: 0.25,
         spaceBetween: 30,
-        allowTouchMove: false
+        allowTouchMove: false,
+
       }
     },
   });
 };
+
+// const convertSwiper = () => {
+//   if (window.matchMedia <= 1439 && advantagesSwiper) {
+//     advantagesSwiper.destroy();
+//     advantagesSwiper = '';
+//   } else if (advantagesSwiper && !advantagesSwiper.initialized) {
+//     initSwiperAdv();
+//   }
+// };
+
+// window.addEventListener('resize', convertSwiper);
 
 export { initSwiperAdv };

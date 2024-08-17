@@ -18,9 +18,9 @@ initSwiperReviews();
 initSwiperAdv();
 initSwiperGallery();
 
-window.addEventListener('resize', () => {
-  initSwiperTraining();
-  initSwiperAdv();
-}, true);
+// window.addEventListener('resize', () => {
+//   initSwiperTraining();
+//   initSwiperAdv();
+// }, true);
 
 // window.addEventListener('resize', initSwiperTraining);
