@@ -75,7 +75,10 @@ const initSwiperTraining = () => {
 
 // changeDirection(mainSwiper);
 
-// window.addEventListener('resize', initSwiperTraining);
+// window.addEventListener('change', initSwiperTraining);
+// window.addEventListener('resize', () => {
+//   initSwiperTraining();
+// }, true);
 
 // const initSwiperTraining = () => {
 //   const swiper = createAdvSlider();

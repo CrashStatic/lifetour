@@ -8,6 +8,7 @@ import { initSwiperTours } from './tours-slider.js';
 import { initSwiperTraining } from './training-slider.js';
 import { initSwiperReviews } from './reviews-slider.js';
 import { initSwiperAdv } from './adv-slider.js';
+import { initSwiperGallery } from './gallery-slider.js';
 
 initNav();
 initSwiperHero();
@@ -15,5 +16,11 @@ initSwiperTours();
 initSwiperTraining();
 initSwiperReviews();
 initSwiperAdv();
+initSwiperGallery();
+
+window.addEventListener('resize', () => {
+  initSwiperTraining();
+  initSwiperAdv();
+}, true);
 
 // window.addEventListener('resize', initSwiperTraining);

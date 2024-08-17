@@ -639,8 +639,90 @@
         </div>
       </section>
 
+      <section class="gallery" id="gallery" data-test="gallery">
+        <div class="gallery__container container">
+          <h2 class="gallery__title title" data-title="Фотогалерея">Фотогалерея</h2>
+          <p>Добавляйте фото с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
 
-      <!-- <section class="gallery" id="gallery" data-test="gallery"></section> -->
+          <div class="gallery__navigation">
+            <button class="gallery__navigation-prev" type="button">
+              <span class="visually-hidden">Назад</span>
+              <svg aria-hidden="true" focusable="false" width="14" height="9">
+                <use href="/__spritemap#sprite-nav-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="gallery__navigation-next" type="button">
+              <span class="visually-hidden">Вперед</span>
+              <svg aria-hidden="true" focusable="false" width="14" height="9">
+                <use href="/__spritemap#sprite-nav-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery__swiper swiper">
+          <div class="gallery__wrapper swiper-wrapper">
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image gallery__image--single">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery/slide-1-desktop.webp 1x, img/gallery/slide-1-desktop@2x.webp 2x" width="284" height="463">
+                  <img src="img/gallery/slide-1.jpg" srcset="img/gallery/slide-1@2x.jpg 2x" width="284" height="463" alt="Мужчина в горах">
+                </picture>
+              </div>
+            </div>
+
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image gallery__image--top">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery/slide-2-top-desktop.webp 1x, img/gallery/slide-2-top-desktop@2x.webp 2x" width="284" height="233">
+                  <img src="img/gallery/slide-2-top.jpg" srcset="img/gallery/slide-2-top@2x.jpg 2x" width="284" height="233" alt="Группа туристов возле костра">
+                </picture>
+              </div>
+              <div class="gallery__image gallery__image--bottom">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery/slide-2-bottom-desktop.webp 1x, img/gallery/slide-2-bottom-desktop@2x.webp 2x" width="284" height="223">
+                  <img src="img/gallery/slide-2-bottom.jpg" srcset="img/gallery/slide-2-bottom@2x.jpg 2x" width="284" height="223" alt="Компас в руке">
+                </picture>
+              </div>
+            </div>
+
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image gallery__image--single">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery/slide-3-desktop.webp 1x, img/gallery/slide-3-desktop@2x.webp 2x" width="284" height="463">
+                  <img src="img/gallery/slide-3.jpg" srcset="img/gallery/slide-3@2x.jpg 2x" width="284" height="463" alt="Спуск туристов">
+                </picture>
+              </div>
+            </div>
+
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image gallery__image--top">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery/slide-4-top-desktop.webp 1x, img/gallery/slide-4-top-desktop@2x.webp 2x" width="284" height="233">
+                  <img src="img/gallery/slide-4-top-desktop.jpg" srcset="img/gallery/slide-4-top-desktop@2x.jpg 2x" width="284" height="233" alt="Группа туристов в горах">
+                </picture>
+              </div>
+              <div class="gallery__image gallery__image--bottom">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery/slide-4-bottom-desktop.webp 1x, img/gallery/slide-4-bottom-desktop@2x.webp 2x" width="284" height="223">
+                  <img src="img/gallery/slide-4-bottom-desktop.jpg" srcset="img/gallery/slide-4-bottom-desktop@2x.jpg 2x" width="284" height="223" alt="Палатка на фоне ночного неба">
+                </picture>
+              </div>
+            </div>
+
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__image gallery__image--single">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery/slide-5-desktop.webp 1x, img/gallery/slide-5-desktop@2x.webp 2x" width="284" height="463">
+                  <img src="img/gallery/slide-5-desktop.jpg" srcset="img/gallery/slide-5-desktop@2x.jpg 2x" width="284" height="463" alt="Двое туристов возле реки">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <!-- <section class="form" id="form" data-test="form"></section> -->
 
       <!-- <footer class="page-footer" id="footer" data-test="footer"></footer> -->
