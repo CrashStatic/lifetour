@@ -23,8 +23,8 @@ const initSwiperGallery = () => {
       },
 
       768: {
-        // slidesPerView: 'auto',
-        spaceBetween: 30,
+        slidesPerView: 3,
+        spaceBetween: 5,
         allowTouchMove: true
       },
 
