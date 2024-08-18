@@ -736,8 +736,23 @@
         </div>
       </section>
 
-
-      <!-- <section class="form" id="form" data-test="form"></section> -->
+      <section class="form" id="form" data-test="form">
+        <div class="form__container">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и&nbsp;наш оператор свяжется <br>с&nbsp;вами для консультации.</p>
+          <form class="form__form-container" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form__item">
+              <input class="form__input" type="number" name="phone" id="phone" placeholder="+7 999 9999999" autocomplete="on" required>
+              <label class="form__label" for="phone">Телефон</label>
+            </div>
+            <div class="form__item">
+              <input class="form__input" type="email" name="email" id="email" placeholder="keks@gmail.com" autocomplete="on" required>
+              <label class="form__label" for="email">Email</label>
+            </div>
+            <button class="form__button button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
 
       <!-- <footer class="page-footer" id="footer" data-test="footer"></footer> -->
     </main>

@@ -2,10 +2,10 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-let gallerySwiper;
+// let gallerySwiper;
 
 const initSwiperGallery = () => {
-  gallerySwiper = new Swiper('.gallery__swiper', {
+  new Swiper('.gallery__swiper', {
 
     // Navigation arrows
     navigation: {
@@ -19,7 +19,6 @@ const initSwiperGallery = () => {
     breakpoints: {
       320: {
         slidesPerView: 2,
-        // slidesPerGroup: 1,
         spaceBetween: 5,
         allowTouchMove: true
       },
@@ -37,15 +36,15 @@ const initSwiperGallery = () => {
   });
 };
 
-const convertSwiper = () => {
-  if (window.matchMedia > 1439 && gallerySwiper) {
-    gallerySwiper.destroy(true, true);
-    gallerySwiper = '';
-  } else if (gallerySwiper && !gallerySwiper.initialized) {
-    initSwiperGallery();
-  }
-};
+// const convertSwiper = () => {
+//   if (window.matchMedia > 1439 && gallerySwiper) {
+//     gallerySwiper.destroy(true, true);
+//     gallerySwiper = '';
+//   } else if (gallerySwiper && !gallerySwiper.initialized) {
+//     initSwiperGallery();
+//   }
+// };
 
-window.addEventListener('resize', convertSwiper);
+// window.addEventListener('resize', convertSwiper);
 
 export { initSwiperGallery };
