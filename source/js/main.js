@@ -9,6 +9,7 @@ import { initSwiperTraining } from './training-slider.js';
 import { initSwiperReviews } from './reviews-slider.js';
 import { initSwiperAdv } from './adv-slider.js';
 import { initSwiperGallery } from './gallery-slider.js';
+import { initForm } from './valid-form.js';
 
 initNav();
 initSwiperHero();
@@ -17,6 +18,7 @@ initSwiperTraining();
 initSwiperReviews();
 initSwiperAdv();
 initSwiperGallery();
+initForm();
 
 
 // window.onresize = function() {
