@@ -21,20 +21,13 @@
   </head>
 
   <body class="page">
-    <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-    <!-- примеры требуемых атрибутов data-test="*" -->
-
     <header class="header" data-test="header">
       <div class="header__container">
         <div class="header__inner container">
           <button class="header__nav-toggle" type="button">
             <span class="visually-hidden">Открыть меню навигации</span>
           </button>
-          <nav class="header__navigation navigation">
+          <nav class="header__navigation navigation" aria-label="Главное меню">
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a class="navigation__link" href="#tours">Туры</a>
@@ -754,7 +747,89 @@
         </div>
       </section>
 
-      <!-- <footer class="page-footer" id="footer" data-test="footer"></footer> -->
+      <footer class="page-footer" id="footer" data-test="footer">
+        <section class="contacts">
+          <div class="contacts__container container">
+            <h2 class="contacts__title title" data-title="Контакты">Контакты</h2>
+            <p>Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span>Телефон</span>
+                <a href="tel:89837454545">+7 983 745-45-45</a>
+              </li>
+              <li class="contacts__item">
+                <span>Email</span>
+                <a href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </li>
+              <li class="contacts__item">
+                <span>Адрес</span>
+                <p>г. Москва, пр-т Мира, д.&nbsp;14, офис 101</p>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__map">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/contacts/map-desktop.webp 1x, img/contacts/map-desktop@2x.webp 2x" width="600" height="324">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/contacts/map-tablet.webp 1x, img/contacts/map-tablet@2x.webp 2x" width="768" height="340">
+              <source type="image/webp" srcset="img/contacts/map-mobile.webp 1x, img/contacts/map-mobile@2x.webp 2x" width="320" height="343">
+              <source media="(min-width: 1440px)" type="image/jpg" srcset="img/contacts/map-desktop.jpg 1x, img/contacts/map-desktop@2x.jpg 2x" width="600" height="324">
+              <source media="(min-width: 768px)" type="image/jpg" srcset="img/contacts/map-tablet.jpg 1x, img/contacts/map-tablet@2x.jpg 2x" width="768" height="340">
+              <img src="img/contacts/map-mobile.jpg" srcset="img/contacts/map-mobile@2x.jpg 2x" width="320" height="343" alt="Карта с адресом Lifetour">
+            </picture>
+          </div>
+        </section>
+
+        <div class="footer container">
+          <div class="footer__logo">
+            <a class="footer__logo-link" href="index.html">
+              <span class="visually-hidden">Логотип сайта Lifetour</span>
+              <img src="img/logo-footer.svg" alt="Логотип сайта Lifetour" width="142" height="42">
+            </a>
+          </div>
+          <nav class="footer__navigation" aria-label="Навигация в подвале">
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#tours">Туры</a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#training">Обучение</a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#about">О нас</a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--vk" href="https://github.com/CrashStatic">
+                <span class="visually-hidden">Наша страница Вконтакте</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--ok" href="https://github.com/CrashStatic">
+                <span class="visually-hidden">Наша страница Одноклассники</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--reddit" href="https://github.com/CrashStatic">
+                <span class="visually-hidden">Наша страница Reddit</span>
+              </a>
+            </li>
+          </ul>
+
+          <a class="footer__copyright" href="#">Политика конфиденциальности</a>
+        </div>
+      </footer>
     </main>
 
     <script type="module" src="js/main.js"></script>
