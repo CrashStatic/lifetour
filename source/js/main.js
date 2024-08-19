@@ -18,6 +18,12 @@ initSwiperReviews();
 initSwiperAdv();
 initSwiperGallery();
 
+
+// window.onresize = function() {
+//   initSwiperTraining();
+//   initSwiperAdv();
+// };
+
 // window.addEventListener('resize', () => {
 //   initSwiperTraining();
 //   initSwiperAdv();
