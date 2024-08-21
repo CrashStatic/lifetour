@@ -203,6 +203,36 @@
     height: 8px;
     mask-image: url("/__spritemap#sprite-vk-view");
     mask-repeat: no-repeat;
+    mask-size: 14px 8px;
     background-color: #2d383f;
+  }
+
+  &:hover {
+    border: 1px solid #2d383f;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    border: 1px solid #ffffff;
+  }
+
+  &:active {
+    border: 1px solid #0266c1;
+    background-color: #0266c1;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+
+  &--disabled,
+  &:disabled {
+    border: 1px solid #2d383f;
+    pointer-events: none;
+    opacity: 0.3;
   }
 }

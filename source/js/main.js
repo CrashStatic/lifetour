@@ -20,7 +20,6 @@ initSwiperAdv();
 initSwiperGallery();
 initForm();
 
-
 // window.onresize = function() {
 //   initSwiperTraining();
 //   initSwiperAdv();

@@ -20,7 +20,7 @@ const initForm = () => {
     const key = event.keyCode;
     return ((key >= 48 && key <= 57) || // Цифры
       (key >= 96 && key <= 105) || // Numpad
-      (key === 8 || key === 187 || key === 107 || key === 32 || key === 37 || key === 39)); // Backspace, +
+      (key === 8 || key === 9 || key === 187 || key === 107 || key === 32 || key === 37 || key === 39)); // Backspace, Tab, +, стрелки
   }
 
   inputPhone.addEventListener('keydown', (evt) => {
