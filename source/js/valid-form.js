@@ -1,5 +1,5 @@
 const VALID_NUMBER = /^[0-9+()\s]*$/i;
-const VALID_EMAIL = /([a-zA-Z0-9._-]+@[a-zA-Z0-9а-яА-ЯёЁ._-]+\.[a-zA-Z0-9а-яА-ЯёЁ_-]+)/;
+const VALID_EMAIL = /([a-zA-Z0-9а-яА-ЯёЁ._-]+@[a-zA-Z0-9а-яА-ЯёЁ._-]+\.[a-zA-Z0-9а-яА-ЯёЁ_-]+)/;
 
 const form = document.querySelector('.form__form-container');
 const inputPhone = form.querySelector('.form__input--phone');
