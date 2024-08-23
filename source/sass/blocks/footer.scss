@@ -13,7 +13,7 @@
     grid-template-columns: min-content 1fr;
     grid-template-rows: repeat(3, auto);
     row-gap: 34px;
-    column-gap: 37px
+    column-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
