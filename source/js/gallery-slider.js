@@ -2,8 +2,6 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-// let gallerySwiper;
-
 const initSwiperGallery = () => {
   new Swiper('.gallery__swiper', {
 
@@ -35,16 +33,5 @@ const initSwiperGallery = () => {
     },
   });
 };
-
-// const convertSwiper = () => {
-//   if (window.matchMedia > 1439 && gallerySwiper) {
-//     gallerySwiper.destroy(true, true);
-//     gallerySwiper = '';
-//   } else if (gallerySwiper && !gallerySwiper.initialized) {
-//     initSwiperGallery();
-//   }
-// };
-
-// window.addEventListener('resize', convertSwiper);
 
 export { initSwiperGallery };

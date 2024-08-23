@@ -56,12 +56,14 @@
   }
 
   &:focus-visible {
+    border-bottom: none;
     outline: 1px solid #ffffff;
   }
 
   &:active {
     color: #1c3374;
     border-bottom: none;
+    outline: none;
   }
 
   &--disabled,

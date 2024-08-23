@@ -22,7 +22,6 @@ let advantagesSwiper;
 const initSwiperAdv = () => {
   renderSlider(sliderElement, slides);
   advantagesSwiper = new Swiper('.adv__swiper', {
-  // new Swiper('.adv__swiper', {
 
     // Navigation arrows
     navigation: {
@@ -37,14 +36,10 @@ const initSwiperAdv = () => {
     breakpoints: {
       1440: {
         enabled: true,
-        // freeMode: true,
         centeredSlides: true,
         slidesPerGroup: 2,
         initialSlide: 3,
-        // slidesPerView: 3,
         slidesPerView: 'auto',
-        // loopAddBlankSlides: true,
-        // loopAdditionalSlides: 0.25,
         spaceBetween: 30,
         allowTouchMove: false,
 
