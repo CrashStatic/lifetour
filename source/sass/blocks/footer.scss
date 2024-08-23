@@ -80,15 +80,18 @@
   grid-template-rows: repeat(3, auto);
   column-gap: 50px;
   row-gap: 15px;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
+    justify-content: end;
   }
 
   @media (min-width: $desktop-width) {
     gap: 21px;
+    justify-content: center;
   }
 }
 
@@ -279,6 +282,7 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 300;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
