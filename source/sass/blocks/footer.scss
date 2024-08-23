@@ -36,6 +36,33 @@
   }
 }
 
+.footer__logo-link {
+  color: #2d383f;
+
+  &:hover {
+    color: hsla(209, 98%, 38%, 0.5);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: #0266c1;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
+
+  &--disabled,
+  &:disabled {
+    color: #999999;
+    pointer-events: none;
+  }
+}
+
 .footer__navigation {
   width: 100%;
 
@@ -260,5 +287,28 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 4;
+  }
+
+  &:hover {
+    color: hsla(209, 98%, 38%, 0.5);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: #0266c1;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
+
+  &--disabled,
+  &:disabled {
+    color: #999999;
+    pointer-events: none;
   }
 }

@@ -36,6 +36,23 @@ const initForm = () => {
     const userPhone = inputPhone.value;
     const userEmail = inputEmail.value;
 
+    const resetInput = (input) => {
+      input.classList.remove('form__input--invalid');
+      input.value = '';
+    };
+
+    inputEmail.addEventListener('input', () => {
+      if (!inputEmail.value.length) {
+        resetInput(inputEmail);
+      }
+    });
+
+    inputPhone.addEventListener('input', () => {
+      if (!inputPhone.value.length) {
+        resetInput(inputPhone);
+      }
+    });
+
     // Проверяем, что номер пользователя содержит только цифры
     if (!isValidPhone(userPhone)) {
       inputPhone.classList.add('form__input--invalid');
