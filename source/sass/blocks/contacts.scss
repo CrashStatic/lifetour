@@ -11,6 +11,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     padding: 123px 120px 93px;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
 
@@ -22,8 +24,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 600px;
-    margin-bottom: 0;
+    width: 600px;
+    margin: 0;
     padding: 0;
   }
 }
@@ -234,10 +236,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     width: 600px;
     height: 324px;
     flex-shrink: 0;
     margin-top: 26px;
+    justify-content: flex-start;
+    margin-left: 0;
   }
 }
 

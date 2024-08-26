@@ -24,7 +24,7 @@
   }
 }
 
-.hero__slide--kamchatka {
+.hero__wrapper .hero__slide--kamchatka {
   @media (min-width: $tablet-width) {
     padding-top: 37px;
     padding-bottom: 562px;
@@ -32,7 +32,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 101px;
-    padding-bottom: 248px;
+    padding-bottom: unset;
   }
 }
 
