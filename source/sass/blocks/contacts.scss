@@ -69,12 +69,11 @@
 }
 
 .contacts__list {
-  @include list;
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 30px;
+  font-style: normal;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -189,22 +188,16 @@
   }
 }
 
-.contacts__item--phone {
-  &::before {
-    background-image: url("/__spritemap#sprite-phone-view");
-  }
+.contacts__item--phone::before {
+  background-image: url("/__spritemap#sprite-phone-view");
 }
 
-.contacts__item--mail {
-  &::before {
-    background-image: url("/__spritemap#sprite-mail-view");
-  }
+.contacts__item--mail::before {
+  background-image: url("/__spritemap#sprite-mail-view");
 }
 
-.contacts__item--address {
-  &::before {
-    background-image: url("/__spritemap#sprite-pin-address-view");
-  }
+.contacts__item--address::before {
+  background-image: url("/__spritemap#sprite-pin-address-view");
 }
 
 .contacts__item p {

@@ -48,5 +48,4 @@ const initSwiperHero = () => {
   });
 };
 
-
 export { initSwiperHero };

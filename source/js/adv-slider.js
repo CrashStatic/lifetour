@@ -17,11 +17,9 @@ const renderSlider = (container, slider) => {
   }
 };
 
-let advantagesSwiper;
-
 const initSwiperAdv = () => {
   renderSlider(sliderElement, slides);
-  advantagesSwiper = new Swiper('.adv__swiper', {
+  new Swiper('.adv__swiper', {
 
     // Navigation arrows
     navigation: {
@@ -47,16 +45,5 @@ const initSwiperAdv = () => {
     },
   });
 };
-
-const convertSwiper = () => {
-  if (window.matchMedia <= 1439 && advantagesSwiper) {
-    advantagesSwiper.destroy();
-    advantagesSwiper = '';
-  } else if (advantagesSwiper && !advantagesSwiper.initialized) {
-    initSwiperAdv();
-  }
-};
-
-window.addEventListener('resize', convertSwiper);
 
 export { initSwiperAdv };

@@ -135,10 +135,8 @@
   }
 }
 
-.process__item--map {
-  &::after {
-    background-image: url("/__spritemap#sprite-map-view");
-  }
+.process__item--map::after {
+  background-image: url("/__spritemap#sprite-map-view");
 }
 
 .process__item--trees {
