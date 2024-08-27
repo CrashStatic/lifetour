@@ -1,4 +1,4 @@
-const VALID_NUMBER = /^[0-9+()\s]*$/i;
+const VALID_NUMBER = /^[0-9+()\s-]*$/i;
 const VALID_EMAIL = /([a-zA-Z0-9а-яА-ЯёЁ._-]+@[a-zA-Z0-9а-яА-ЯёЁ._-]+\.[a-zA-Z0-9а-яА-ЯёЁ_-]+)/;
 
 const form = document.querySelector('.form__form-container');
@@ -20,8 +20,8 @@ const initForm = () => {
   function isNumericKeyEvent(event) {
     const key = event.keyCode;
     return ((key >= 48 && key <= 57) || // Цифры
-      (key >= 96 && key <= 105) || // Numpad
-      (key === 8 || key === 9 || key === 187 || key === 107 || key === 32 || key === 37 || key === 39)); // Backspace, Tab, +, стрелки
+      (key >= 96 && key <= 109) || // Numpad
+      (key === 8 || key === 9 || key === 187 || key === 189 || key === 32 || key === 37 || key === 39)); // Backspace, Tab, +, -, стрелки
   }
 
   inputPhone.addEventListener('keydown', (evt) => {
@@ -46,7 +46,6 @@ const initForm = () => {
       if (!inputEmail.value.length) {
         resetInput(inputEmail);
       }
-      // errorElement.textContent = '';
       errorElement.classList.add('visually-hidden');
     });
 
@@ -66,11 +65,9 @@ const initForm = () => {
     //Проверяем, что email корректный
     if(!isValidEmail(userEmail)) {
       inputEmail.classList.add('form__input--invalid');
-      // errorElement.textContent = 'Почта должна содержать знак "@", а так же "." перед доменом';
       errorElement.classList.remove('visually-hidden');
     } else {
       inputEmail.classList.remove('form__input--invalid');
-      // errorElement.textContent = '';
       errorElement.classList.add('visually-hidden');
     }
 
@@ -80,6 +77,7 @@ const initForm = () => {
     // Если всё в порядке, отправляем форму
     if (validForm) {
       form.submit();
+      form.reset();
     }
   });
 };

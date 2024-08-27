@@ -210,6 +210,7 @@
 .form__input:focus-visible + .form__label,
 .form__input:not(:placeholder-shown) + .form__label {
   opacity: 0;
+  pointer-events: none;
 }
 
 .form__input:disabled + .form__label {
