@@ -216,6 +216,24 @@
   color: #999999;
 }
 
+.form .form__error {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  margin-bottom: 0;
+  background-color: #677780;
+  border-radius: 5px;
+  padding: 5px;
+
+  @media (min-width: $tablet-width) {
+    bottom: -60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -65px;
+  }
+}
+
 .form__button {
   width: 100%;
   margin: 0 auto;

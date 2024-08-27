@@ -4,6 +4,7 @@ const VALID_EMAIL = /([a-zA-Z0-9а-яА-ЯёЁ._-]+@[a-zA-Z0-9а-яА-ЯёЁ._-]
 const form = document.querySelector('.form__form-container');
 const inputPhone = form.querySelector('.form__input--phone');
 const inputEmail = form.querySelector('.form__input--email');
+const errorElement = form.querySelector('.form__error');
 
 //Проверка телефона регулярным выражением
 const isValidPhone = (value) => VALID_NUMBER.test(value);
@@ -45,6 +46,8 @@ const initForm = () => {
       if (!inputEmail.value.length) {
         resetInput(inputEmail);
       }
+      // errorElement.textContent = '';
+      errorElement.classList.add('visually-hidden');
     });
 
     inputPhone.addEventListener('input', () => {
@@ -63,8 +66,12 @@ const initForm = () => {
     //Проверяем, что email корректный
     if(!isValidEmail(userEmail)) {
       inputEmail.classList.add('form__input--invalid');
+      // errorElement.textContent = 'Почта должна содержать знак "@", а так же "." перед доменом';
+      errorElement.classList.remove('visually-hidden');
     } else {
       inputEmail.classList.remove('form__input--invalid');
+      // errorElement.textContent = '';
+      errorElement.classList.add('visually-hidden');
     }
 
     //Прописываем условия валидности формы
